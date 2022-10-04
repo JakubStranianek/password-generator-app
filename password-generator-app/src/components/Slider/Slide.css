@@ -6,6 +6,12 @@
 .MuiSlider-thumb {
     color: #E6E5EA !important;
 }
+
+.MuiSlider-thumb:hover {
+    color: #18171F !important;
+    border: 2px solid #A4FFAF !important;
+    box-shadow: none !important;
+}
   
 .MuiSlider-rail {
     opacity: 1;

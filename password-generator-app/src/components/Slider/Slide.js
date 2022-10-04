@@ -2,9 +2,14 @@ import React, { useState } from 'react'
 import Slider from '@mui/material/Slider';
 import "./Slide.css"
 
-export default function Slide() {
+export default function Slide(props) {
   const [mainValue, setMainValue] = useState(10);
   
+  const handleChange = (e) => {
+    setMainValue(e.target.value);
+    props.setPassLenght(e.target.value);
+  }
+
   return (
     <div className='w-11/12 mt-5 mr-auto ml-auto pt-6 bg-myGrey pb-8'>        
       <div className='flex items-center flex-col'>
@@ -14,16 +19,17 @@ export default function Slide() {
         </div>
       <div className='w-full pl-8 pr-8 mt-2'>
         <Slider
-          defaultValue={mainValue}
+          value={mainValue}
           min={0}
           max={20}
           step={1}
           aria-label="Small"
           valueLabelDisplay="auto"
-          onChange={(e) => setMainValue(e.target.value)}
+          onChange={handleChange}
         />
       </div>
       </div>
+
     </div>
   )
 }
