@@ -1,3 +1,18 @@
-.css-eg0mwd-MuiSlider-thumb {
+.MuiSlider-root{
+    color: #A4FFAF !important;
+    height: 8px !important;
+}
+
+.slider .MuiSlider-thumb {
     color: #E6E5EA;
+}
+  
+.MuiSlider-rail {
+    opacity: 1;
+    color: #18171F;
+    border-radius: 0 !important;
+}
+
+.MuiSlider-track {
+    border-radius: 0 !important;
 }
