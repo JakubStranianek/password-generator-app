@@ -33,7 +33,8 @@ module.exports = {
 
       backgroundImage: {
         "copyGreen" : "url(./assets/copy_green.png)", 
-        "copyWhite" : "url(./assets/copy_white.png)"
+        "copyWhite" : "url(./assets/copy_white.png)",
+        "check" : "url(./assets/check.png)",
       }
     },
   },

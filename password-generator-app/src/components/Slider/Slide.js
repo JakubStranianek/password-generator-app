@@ -19,7 +19,6 @@ export default function Slide() {
           max={20}
           step={1}
           aria-label="Small"
-          color="secondary"
           valueLabelDisplay="auto"
           onChange={(e) => setMainValue(e.target.value)}
         />

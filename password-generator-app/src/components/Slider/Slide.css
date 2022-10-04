@@ -3,8 +3,8 @@
     height: 8px !important;
 }
 
-.slider .MuiSlider-thumb {
-    color: #E6E5EA;
+.MuiSlider-thumb {
+    color: #E6E5EA !important;
 }
   
 .MuiSlider-rail {

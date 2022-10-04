@@ -1,4 +1,5 @@
 import './App.css';
+import Checkboxes from './components/Checkbox/Checkboxes';
 import Input from "./components/Input/Input"
 import Slide from './components/Slider/Slide';
 
@@ -11,6 +12,7 @@ function App() {
 
       <Input/>
       <Slide/>
+      <Checkboxes/>
     </div>
   );
 }
