@@ -40,14 +40,11 @@ function App() {
           Password Generator
         </h1>
 
-      <Input/>
+      <Input sentInput={makeid(passLength)}/>
       <Slide setPassLenght={getLength}/>
       <Checkboxes checkbox1={checkbox1} checkbox2={checkbox2} checkbox3={checkbox3} checkbox4={checkbox4}/>
       <Strength/>
       <Button />
-      <h1 className='text-myWhite'>{makeid(passLength)}</h1>
-
-      {"Check1" + console.log(check1)}
     </div>
   );
 }
