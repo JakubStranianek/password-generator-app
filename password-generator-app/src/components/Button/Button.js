@@ -8,7 +8,7 @@ export default function Button() {
 
 
     return (
-    <div className='w-11/12 bg-myGrey mr-auto ml-auto flex justify-center pb-4'>
+    <div className='w-11/12 bg-myGrey mr-auto ml-auto flex justify-center pb-4 md:w-[540px]'>
         <button className='w-full mr-8 ml-8 pt-4 pb-4 bg-myGreen flex items-center justify-center text-base font-bold hover:bg-transparent hover:border-2 hover:border-myGreen hover:text-myGreen'
              onMouseOver={() => setSrc(arrowGreen)} 
              onMouseLeave={() => setSrc(arrowBlack)}

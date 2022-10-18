@@ -27,9 +27,26 @@ function App() {
 
     function makeid(length) {
       var result = '';
+      var checkConditions = 0;
       for ( var i = 0; i < length; i++ ) {
-        result += uppercase.charAt(Math.floor(Math.random() * 
-   uppercase.length));
+        if (check1 === true) {
+          result += uppercase.charAt(Math.floor(Math.random() * 
+          uppercase.length));
+          checkConditions += 1;
+        } else if (check2 === true) {
+          result += lowercase.charAt(Math.floor(Math.random() * 
+          uppercase.length));
+          checkConditions += 2;
+        } else if (check3 === true) {
+          result += numbers.charAt(Math.floor(Math.random() * 
+          uppercase.length));
+          checkConditions += 4;
+        } else if (check4 === true) {
+          result += symbols.charAt(Math.floor(Math.random() * 
+          uppercase.length)); 
+          checkConditions += 8;
+        }
+        
      }
      return result;
   }
