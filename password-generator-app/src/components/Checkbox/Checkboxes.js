@@ -33,7 +33,7 @@ export default function Checkboxes(props) {
         <section className='w-full flex flex-col pl-8 pr-8'>
             <div className='w-full flex flex-row items-center pb-8'> 
                 <div onClick={handleChange} className={click ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer"}></div>
-                <p className='text-myWhite ml-5 text-base font-bold'>Include Uppercase Letters {"" + click}</p>
+                <p className='text-myWhite ml-5 text-base font-bold'>Include Uppercase Letters</p>
             </div>
 
             <div className='w-full flex flex-row items-center pb-8'> 

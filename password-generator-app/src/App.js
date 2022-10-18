@@ -11,6 +11,7 @@ function App() {
     const lowercase = "abcdefghijklmnopqrstuvwxyz";
     const numbers = "0123456789";
     const symbols = "~`!@#$%^&*()-_+={}[]|/:;'<>,.?";
+    const [finalPassword, setFinalPassword] = useState("");
 
     const [passLength, setPassLenght] = useState(10);
     const [check1, setCheck1] = useState(false);
@@ -46,8 +47,10 @@ function App() {
           uppercase.length)); 
           checkConditions += 8;
         }
-        
+
      }
+
+     setFinalPassword(result);
      return result;
   }
 
@@ -57,7 +60,7 @@ function App() {
           Password Generator
         </h1>
 
-      <Input sentInput={makeid(passLength)}/>
+      <Input sentInput={finalPassword}/>
       <Slide setPassLenght={getLength}/>
       <Checkboxes checkbox1={checkbox1} checkbox2={checkbox2} checkbox3={checkbox3} checkbox4={checkbox4}/>
       <Strength/>
