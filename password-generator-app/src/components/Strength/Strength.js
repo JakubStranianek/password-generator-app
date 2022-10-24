@@ -20,7 +20,7 @@ export default function Strength() {
         }
       ];
 
-    const [index, setIndex] = useState(3);
+    const [index, setIndex] = useState(0);
 
   return (
     <div className='w-11/12 bg-myGrey mr-auto ml-auto pt-4 pb-5 md:w-[540px]'>

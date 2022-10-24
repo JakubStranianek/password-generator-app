@@ -20,7 +20,7 @@ export default function Input(props) {
   return (
     <div>
         <div className='relative w-11/12 mr-auto ml-auto flex justify-center md:w-[540px]'>
-            <input type={'text'} placeholder="P4$5W0rD!" value={props.sentInput} readOnly className='bg-myGrey w-full text-myWhite h-16 pl-8 text-headingL focus:outline-none'></input>
+            <input type={'text'} placeholder="P4$5W0rD!" value={props.pass} readOnly className='bg-myGrey w-full text-myWhite h-16 pl-8 text-headingL focus:outline-none'></input>
             <p className={show === true ? 'uppercase text-body text-myGreen absolute right-16 top-5' : "hidden"}>COPIED</p>
             <img src={src}
             onClick={handleCopy} 
