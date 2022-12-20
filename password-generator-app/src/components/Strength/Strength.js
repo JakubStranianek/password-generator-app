@@ -3,6 +3,10 @@ import React, { useState } from 'react'
 export default function Strength(props) {
     const types = [
         {
+          name: "",
+          bgColor: "",
+        },
+        {
           name: "TOO WEAK!",
           bgColor: "bg-myRed",
         },
@@ -29,19 +33,10 @@ export default function Strength(props) {
             <h1 className='font-bold text-lg text-mySilver'>STRENGTH</h1>
 
             <div className='flex items-center'>
-                <h1 className='text-myWhite pr-4'>{types[index].name}</h1> 
-                {props.sentStrength < 0 ? 
+                <h1 className='text-myWhite pr-4'>{types[props.sentStrength].name}</h1> 
+                {props.sentStrength === 0 ? 
                       <div className='flex'>
                       <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
-                      <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
-                      <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
-                      <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
-                  </div>    
-                    : ""}  
-
-                    {props.sentStrength === 0 ? 
-                      <div className='flex'>
-                      <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px]'}></div>
                       <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
                       <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
                       <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
@@ -51,7 +46,7 @@ export default function Strength(props) {
                     {props.sentStrength === 1 ? 
                       <div className='flex'>
                       <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px]'}></div>
-                      <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px] ml-2'}></div>
+                      <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
                       <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
                       <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
                   </div>    
@@ -61,12 +56,21 @@ export default function Strength(props) {
                       <div className='flex'>
                       <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px]'}></div>
                       <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px] ml-2'}></div>
+                      <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
+                      <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
+                  </div>    
+                    : ""}  
+
+                    {props.sentStrength === 3 ? 
+                      <div className='flex'>
+                      <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px]'}></div>
+                      <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px] ml-2'}></div>
                       <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px] ml-2'}></div>
                       <div className={'border-2 border-myWhite w-[10px] h-[28px] ml-2'}></div>
                   </div>    
                     : ""}   
 
-                    {props.sentStrength === 3 ? 
+                    {props.sentStrength === 4? 
                       <div className='flex'>
                       <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px]'}></div>
                       <div className={types[props.sentStrength].bgColor + ' w-[10px] h-[28px] ml-2'}></div>

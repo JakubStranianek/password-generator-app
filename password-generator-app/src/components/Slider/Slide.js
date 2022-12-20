@@ -11,7 +11,7 @@ export default function Slide(props) {
   }
 
   return (
-    <div className='w-11/12 mt-5 mr-auto ml-auto pt-6 bg-myGrey pb-8 md:w-[540px]'>        
+    <div className='w-11/12 mt-5 mr-auto ml-auto pt-6 bg-myGrey pb-4 md:w-[540px]'>        
       <div className='flex items-center flex-col'>
         <div className='w-full pl-8 pr-8 flex justify-between items-center'>
           <h1 className='text-myWhite text-lg font-bold'>Character Length</h1>

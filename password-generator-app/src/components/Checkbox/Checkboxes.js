@@ -32,23 +32,23 @@ export default function Checkboxes(props) {
         {/* SECTION INPUTS */}
         <section className='w-full flex flex-col pl-8 pr-8'>
             <div className='w-full flex flex-row items-center pb-8'> 
-                <div onClick={handleChange} className={click ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer"}></div>
-                <p className='text-myWhite ml-5 text-base font-bold'>Include Uppercase Letters</p>
+                <div onClick={handleChange} className={click ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer hover:border-myGreen"}></div>
+                <p className='text-myWhite ml-5 text-sm font-bold'>Include Uppercase Letters</p>
             </div>
 
             <div className='w-full flex flex-row items-center pb-8'> 
-                <div onClick={handleChange1} className={click1 ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer"}></div>
-                <p className='text-myWhite ml-5 text-base font-bold'>Include Lowercase Letters</p>
+                <div onClick={handleChange1} className={click1 ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer hover:border-myGreen"}></div>
+                <p className='text-myWhite ml-5 text-sm font-bold'>Include Lowercase Letters</p>
             </div>
 
             <div className='w-full flex flex-row items-center pb-8'> 
-                <div onClick={handleChange2} className={click2 ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer"}></div>
-                <p className='text-myWhite ml-5 text-base font-bold'>Include Numbers</p>
+                <div onClick={handleChange2} className={click2 ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer hover:border-myGreen"}></div>
+                <p className='text-myWhite ml-5 text-sm font-bold'>Include Numbers</p>
             </div>
 
             <div className='w-full flex flex-row items-center pb-8'> 
-                <div onClick={handleChange3} className={click3 ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer    "}></div>
-                <p className='text-myWhite ml-5 text-base font-bold'>Include Symbols</p>
+                <div onClick={handleChange3} className={click3 ? 'w-8 h-8 bg-myGreen bg-check bg-no-repeat bg-center bg-[length:23px_20px] cursor-pointer' : "border-2 w-8 h-8 cursor-pointer hover:border-myGreen"}></div>
+                <p className='text-myWhite ml-5 text-sm font-bold'>Include Symbols</p>
             </div>
         </section>
     </div>

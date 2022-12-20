@@ -37,7 +37,6 @@ function App() {
         } else if (check3 && choice === 3) {
           password += random(0, 9)
         } else if(!check1 && !check2 && !check3 && !check4){
-          setStrength(0);
           password = "";
         } else {
           i--
@@ -48,7 +47,37 @@ function App() {
   }
 
   const handleStrength = () => {
-    
+    let finalStrenght = 0;
+    let items = [
+      {
+        "check": check1,
+        "value": 0,
+      },
+      {
+        "check": check2,
+        "value": 0,
+      },
+      {
+        "check": check3,
+        "value": 0,
+      },
+      {
+        "check": check4,
+        "value": 0,
+      },
+    ]
+
+    items.forEach(element => {
+      if (element.check === true) {
+        element.value = 1;
+      }
+    });
+        
+    items.forEach(element => {
+      finalStrenght += element.value;
+    })
+
+    setStrength(finalStrenght);
   }
 
   const random = (min = 0, max = 1) => {
@@ -77,7 +106,7 @@ function App() {
       <Input pass={finalPassword}/>
       <Slide setPassLenght={getLength}/>
       <Checkboxes checkbox1={checkbox1} checkbox2={checkbox2} checkbox3={checkbox3} checkbox4={checkbox4}/>
-      <Strength sentStrength={strength} setStrength={() => setStrength(strength)}/>
+      <Strength sentStrength={strength}/>
       <Button generate={() => { makeid(passLength); handleStrength();}}/>
     </div>
   );
