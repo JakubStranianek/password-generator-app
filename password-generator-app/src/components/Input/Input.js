@@ -23,7 +23,7 @@ export default function Input(props) {
             <input type={'text'} placeholder="P4$5W0rD!" value={props.pass} readOnly className='bg-myGrey w-full text-myWhite h-16 pl-8 text-headingL focus:outline-none'></input>
             <p className={show === true ? 'uppercase text-body text-myGreen absolute right-16 top-5' : "hidden"}>COPIED</p>
             <img src={src}
-            onClick={handleCopy} 
+            onClick={() => {navigator.clipboard.writeText(props.pass); handleCopy();}} 
             onMouseOver={() => setSrc(copyWhite)} 
             onMouseLeave={() => setSrc(copyGreen)}alt="copyIcon" className='absolute right-7 top-5'/>
         </div>
